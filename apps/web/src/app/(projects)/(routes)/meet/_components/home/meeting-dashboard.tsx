@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { MeetingHeader } from "@/app/(projects)/(routes)/meet/_components/home/meeting-header";
 import { JoinMeeting } from "@/app/(projects)/(routes)/meet/_components/home/join-meeting";
 import { UpcomingMeetings } from "@/app/(projects)/(routes)/meet/_components/home/upcoming-meetings";
 import { RecentMeetings } from "@/app/(projects)/(routes)/meet/_components/home/recent-meetings";

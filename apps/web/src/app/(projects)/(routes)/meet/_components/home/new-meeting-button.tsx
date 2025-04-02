@@ -1,9 +1,8 @@
-import { ChevronDownIcon, GitForkIcon, Video } from "lucide-react";
+import { ChevronDownIcon, Video } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
-  DropdownMenuCheckboxItem,
   DropdownMenuContent,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";

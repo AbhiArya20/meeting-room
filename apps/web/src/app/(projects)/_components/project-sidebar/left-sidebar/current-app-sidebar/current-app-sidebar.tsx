@@ -9,11 +9,9 @@ import {
   SidebarGroupContent,
   SidebarHeader,
   SidebarMenu,
-  SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 import useApp from "@/project/_hooks/use-app";
-import { ArrowUpCircleIcon } from "lucide-react";
 import { APPS } from "@/project/_constants/apps";
 import CurrentAppIcon from "@/project/_components/current-app-icon/current-app-icon";
 import MailSidebarContent from "./mail-sidebar/mail-sidebar-content";

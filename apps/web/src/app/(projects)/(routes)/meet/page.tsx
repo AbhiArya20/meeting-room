@@ -1,7 +1,6 @@
 import React from "react";
 
 import { MeetingDashboard } from "@/app/(projects)/(routes)/meet/_components/home/meeting-dashboard";
-import { NavActions } from "../../_components/project-navbar/right-project-navbar/right-project-navbar";
 
 export default function Meeting() {
   return (

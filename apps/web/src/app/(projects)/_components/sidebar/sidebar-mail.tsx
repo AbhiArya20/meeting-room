@@ -150,6 +150,8 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const [mails, setMails] = React.useState(data.mails);
   const { setOpen } = useSidebar();
 
+  console.log(activeItem);
+
   return (
     <Sidebar
       collapsible="icon"
