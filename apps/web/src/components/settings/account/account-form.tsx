@@ -124,7 +124,7 @@ export function AccountForm() {
                       variant={"outline"}
                       className={cn(
                         "w-[240px] pl-3 text-left font-normal",
-                        !field.value && "text-muted-foreground"
+                        !field.value && "text-muted-foreground",
                       )}
                     >
                       {field.value ? (
@@ -169,12 +169,12 @@ export function AccountForm() {
                       role="combobox"
                       className={cn(
                         "w-[200px] justify-between",
-                        !field.value && "text-muted-foreground"
+                        !field.value && "text-muted-foreground",
                       )}
                     >
                       {field.value
                         ? languages.find(
-                            (language) => language.value === field.value
+                            (language) => language.value === field.value,
                           )?.label
                         : "Select language"}
                       <ChevronsUpDown className="opacity-50" />
@@ -200,7 +200,7 @@ export function AccountForm() {
                                 "mr-2",
                                 language.value === field.value
                                   ? "opacity-100"
-                                  : "opacity-0"
+                                  : "opacity-0",
                               )}
                             />
                             {language.label}

@@ -39,7 +39,7 @@ export function NavMain({
       <SidebarGroupLabel>Platform</SidebarGroupLabel>
       <SidebarGroupContent>
         <SidebarMenu>
-          {items.map((item, index) => (
+          {items.map((item) => (
             // <Tree item={item} key={index}/>
             <Collapsible
               key={item.title}

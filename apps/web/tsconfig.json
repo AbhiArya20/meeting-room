@@ -7,8 +7,8 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"],
-      "@/project/*": ["./src/app/(projects)/*"]
+      "@/project/*": ["./src/app/(projects)/*"],
+      "@/*": ["./src/*"]
     }
   },
   "include": [
@@ -16,7 +16,8 @@
     "**/*.tsx",
     "next-env.d.ts",
     "next.config.js",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "src/app/(projects)/_components/current-app-icon"
   ],
   "exclude": ["node_modules"]
 }

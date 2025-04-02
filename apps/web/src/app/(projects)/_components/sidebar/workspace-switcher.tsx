@@ -163,7 +163,7 @@ export function WorkspaceSwitcher({ workspaces }: { workspaces: Workspace[] }) {
 }
 
 type WorkspaceSwitchProps = {
-  workspace: Workspace;
+  workspace?: Workspace;
   icon?: React.ReactNode;
 };
 
@@ -179,19 +179,19 @@ const WorkspaceSwitch: React.FC<WorkspaceSwitchProps> = ({
       <div
         className={cn(
           "bg-sidebar-primary text-sidebar-primary-foreground flex aspect-square size-8 items-center justify-center rounded-lg",
-          workspace.bgColor,
+          workspace?.bgColor,
         )}
       >
-        <workspace.logo className={cn("size-4", workspace.textColor)} />
+        {/* <workspace?.logo className={cn("size-4", workspace?.textColor)} /> */}
       </div>
       <div
         className={cn(
           "grid flex-1 text-left text-sm leading-tight text-nowrap",
         )}
       >
-        <TypographySmall>{workspace.name}</TypographySmall>
+        <TypographySmall>{workspace?.name}</TypographySmall>
         <TypographyMuted className="truncate text-xs">
-          {workspace.plan}
+          {workspace?.plan}
         </TypographyMuted>
       </div>
       {icon}

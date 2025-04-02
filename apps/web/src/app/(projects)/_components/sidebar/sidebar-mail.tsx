@@ -3,7 +3,7 @@
 import * as React from "react";
 import { ArchiveX, Command, File, Inbox, Send, Trash2 } from "lucide-react";
 
-import { NavUser } from "@/components/ui/sidebar";
+// import { NavUser } from "@/components/ui/sidebar";
 import { Label } from "@/components/ui/label";
 import {
   Sidebar,
@@ -161,7 +161,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       {/* This will make the sidebar appear as icons. */}
       <Sidebar
         collapsible="none"
-        className="!w-[calc(var(--sidebar-width-icon)_+_1px)] border-r"
+        className="!w-[calc(var(--sidebar-width-icon)_+_1px)]"
       >
         <SidebarHeader>
           <SidebarMenu>
@@ -202,7 +202,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                         );
                         setOpen(true);
                       }}
-                      isActive={activeItem.title === item.title}
+                      // isActive={activeItem.title === item.title}
                       className="px-2.5 md:px-2"
                     >
                       <item.icon />
@@ -214,9 +214,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             </SidebarGroupContent>
           </SidebarGroup>
         </SidebarContent>
-        <SidebarFooter>
-          <NavUser user={data.user} />
-        </SidebarFooter>
+        <SidebarFooter>{/* <NavUser user={data.user} /> */}</SidebarFooter>
       </Sidebar>
 
       {/* This is the second sidebar */}
@@ -225,7 +223,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <SidebarHeader className="gap-3.5 border-b p-4">
           <div className="flex w-full items-center justify-between">
             <div className="text-foreground text-base font-medium">
-              {activeItem.title}
+              {/* {activeItem.title} */}
             </div>
             <Label className="flex items-center gap-2 text-sm">
               <span>Unreads</span>

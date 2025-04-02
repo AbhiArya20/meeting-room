@@ -70,7 +70,7 @@ export function SettingsDialog() {
           <Settings />
         </Button>
       </DialogTrigger>
-      <DialogContent className="overflow-hidden p-0 md:max-h-[500px] md:max-w-[700px] lg:max-w-[800px] ">
+      <DialogContent className="overflow-hidden p-0 md:max-h-[500px] md:max-w-[700px] lg:max-w-[800px]">
         <DialogTitle className="sr-only">Settings</DialogTitle>
         <DialogDescription className="sr-only">
           Customize your settings here.
@@ -115,11 +115,11 @@ export function SettingsDialog() {
                 </Breadcrumb>
               </div>
             </header>
-            <div className="flex flex-1 flex-col gap-4 overflow-y-auto p-4 pt-0 scrollbar-w-1 scrollbar scrollbar-thumb-rounded-full scrollbar-thumb-foreground/5 scrollbar-track-rounded-full scrollbar-track-transparent">
+            <div className="scrollbar-w-1 scrollbar scrollbar-thumb-rounded-full scrollbar-thumb-foreground/5 scrollbar-track-rounded-full scrollbar-track-transparent flex flex-1 flex-col gap-4 overflow-y-auto p-4 pt-0">
               {Array.from({ length: 10 }).map((_, i) => (
                 <div
                   key={i}
-                  className="aspect-video max-w-3xl rounded-xl bg-muted/50"
+                  className="bg-muted/50 aspect-video max-w-3xl rounded-xl"
                 />
               ))}
             </div>
