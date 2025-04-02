@@ -1,7 +1,6 @@
 "use client";
 
 import * as React from "react";
-import { type Icon } from "@tabler/icons-react";
 
 import {
   SidebarGroup,
@@ -10,17 +9,29 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
+import { HelpCircleIcon, SearchIcon, SettingsIcon } from "lucide-react";
 
 export function NavSecondary({
-  items,
   ...props
-}: {
-  items: {
-    title: string;
-    url: string;
-    icon: Icon;
-  }[];
-} & React.ComponentPropsWithoutRef<typeof SidebarGroup>) {
+}: React.ComponentPropsWithoutRef<typeof SidebarGroup>) {
+  const items = [
+    {
+      title: "Settings",
+      url: "#",
+      icon: SettingsIcon,
+    },
+    {
+      title: "Get Help",
+      url: "#",
+      icon: HelpCircleIcon,
+    },
+    {
+      title: "Search",
+      url: "#",
+      icon: SearchIcon,
+    },
+  ];
+
   return (
     <SidebarGroup {...props}>
       <SidebarGroupContent>

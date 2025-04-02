@@ -6,7 +6,7 @@ export default function MeetSidebarContent() {
   return (
     <div>
       <NavMain items={MEET_SIDEBAR_MENUS.navMain} />
-      <NavDocuments items={MEET_SIDEBAR_MENUS.documents} />
+      <NavDocuments />
     </div>
   );
 }
