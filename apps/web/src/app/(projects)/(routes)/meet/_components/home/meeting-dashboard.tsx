@@ -14,7 +14,7 @@ export function MeetingDashboard() {
 
   return (
     <div className="mx-auto h-full space-y-6 px-4 py-4 sm:px-6 md:py-8">
-      <div className="grid h-full grid-cols-1 gap-6 lg:grid-cols-6">
+      <div className="grid h-full grid-cols-1 gap-6 xl:grid-cols-6">
         <div className="h-full space-y-6 overflow-y-auto lg:col-span-4">
           <div className="flex flex-wrap justify-end gap-3">
             <StartMeetingButton />
@@ -38,7 +38,7 @@ export function MeetingDashboard() {
           </Tabs>
         </div>
 
-        <div className="hidden w-full lg:col-span-2 lg:block">
+        <div className="hidden w-full lg:col-span-2 xl:block">
           <div className="bg-card/50 text-card-foreground flex items-center justify-center rounded-xl border shadow-sm backdrop-blur-sm">
             <div className="p-4 text-center">
               <div className="bg-primary/10 text-primary mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-full">

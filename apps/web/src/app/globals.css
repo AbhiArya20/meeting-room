@@ -1,4 +1,4 @@
-@import "tailwindcss";
+p@import "tailwindcss";
 @import "tw-animate-css";
 
 @plugin 'tailwind-scrollbar' {

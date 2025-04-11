@@ -4,8 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack --port 3000",
     "build": "next build",
+    "dev": "next dev --turbopack --port 3000",
     "start": "next start",
     "lint": "next lint --max-warnings 0",
     "check-types": "tsc --noEmit"
@@ -45,7 +45,7 @@
     "@radix-ui/react-toggle": "^1.1.2",
     "@radix-ui/react-toggle-group": "^1.1.2",
     "@radix-ui/react-tooltip": "^1.1.8",
-    "@repo/ui": "*",
+    "@meeting-room/ui": "*",
     "@tabler/icons-react": "^3.31.0",
     "@tailwindcss/postcss": "^4.0.15",
     "@tanstack/react-table": "^8.21.2",
@@ -75,8 +75,8 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
-    "@repo/eslint-config": "*",
-    "@repo/typescript-config": "*",
+    "@meeting-room/eslint-config": "*",
+    "@meeting-room/typescript-config": "*",
     "@types/node": "^22.13.10",
     "@types/react": "19.0.10",
     "@types/react-dom": "19.0.4",

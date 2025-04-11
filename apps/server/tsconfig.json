@@ -1,0 +1,29 @@
+{
+  "extends": "@meeting-room/typescript-config/base.json",
+  "compilerOptions": {
+    "lib": ["ES2017"],
+    "skipLibCheck": true,
+    "strict": true,
+    "module": "esnext",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "checkJs": false,
+    "target": "es2020",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "plugins": [{ "transform": "typescript-transform-paths" }]
+  },
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  },
+  "tsc-alias": {
+    "resolveFullPaths": true,
+    "verbose": false
+  },
+  "exclude": ["node_modules", "dist"],
+  "include": ["src"]
+}
